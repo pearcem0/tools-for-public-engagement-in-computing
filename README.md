@@ -22,7 +22,6 @@ Goal: Make it from city A to city H in the shortest path, by clicking the grey o
 ![alt text](example_images/TFPEIC_Example.png "Example Problem - Start")
 
 ### Easy Problem - Visibilty of system status
-Inline-style: 
 ![alt text](example_images/TFPEIC_visibilityofsystemtatus.png "Easy Problem 1 - visibility of system status")
 
 ### Example Demonstration - Start
