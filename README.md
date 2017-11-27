@@ -112,12 +112,13 @@ In order to make the application interactive I needed a way of communicating the
 ### Buttons
 For simple actions such as Reset, Run, Step, Hint, Exit etc. I provided specific buttons for each task. I created a new data type called Button, which allowed me to apply methods that would allow me to customise the background colour, foreground font colour, and set an enabled or disabled status variable. Then using the action method provided by the javax package, if the event target is an instance of a Button, the program compares the string of the Button and performs tasks accordingly.
 ```java
- if (evt.target instanceof Button)
+if (evt.target instanceof Button)
 {
      if (((String)arg).equals("Run"))
      {
          parent.graphcanvas.runapp();
-... ```
+...
+```
 
 ### Hint button
 For the problem solving section of the application, there is a button available that provides the user with hints on how to solve the problem if they are unsure. The actions of this button are a little more complex as it is set to display a message dialogue box showing a different hint each time. To do this the program must keep track of the current hint number, and increment it each time a new hint is displayed. The dialogue box displays the element of a String type array of hints corresponding with the current hint number. When the hint number is the total number of hints, it is reset to zero to restart the hints loop.
